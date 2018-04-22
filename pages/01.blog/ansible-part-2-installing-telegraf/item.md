@@ -79,4 +79,4 @@ Now we will look at the handlers section of the playbook. As you can see, the ha
 
 This completes our post on using Ansible to setup Telegraf, as well as looking at a slightly more advanced playbook then we did previously.
 
-P.S. If you want to see what you can do with Grafana and system metrics, try pressing the "Dashboard" button in the top left of the page, or going to ~~[https://dashboard.justin-tech.com](https://dashboard.justin-tech.com) ~~
+P.S. If you want to see what you can do with Grafana and system metrics, try pressing the "Dashboard" button in the top left of the page, or going to ~~https://dashboard.justin-tech.com~~
