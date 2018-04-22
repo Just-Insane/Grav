@@ -7,8 +7,8 @@ taxonomy:
     tag:
         - ansible
         - dev
-hide_git_sync_repo_link: false
 visible: true
+hide_git_sync_repo_link: false
 ---
 
 This Post will serve as an introduction to Ansible and give to you a taste of what it can do.
@@ -25,7 +25,7 @@ Interested? Awesome! Let's look at installing Ansible and creating our first pla
 
 ## Step 1: Installation
 
-Note: I am assuming you are using CentOS 7, if you are using another OS, you can find Ansible's installation documentation [here](http://docs.ansible.com/ansible/latest/intro_installation.html).
+Note: I am assuming you are using CentOS 7, if you are using another OS, you can find Ansible's installation documentation ~~[here](http://docs.ansible.com/ansible/latest/intro_installation.html)~~.
 
 On your Ansible host (which can be a dedicated VM, or your laptop), you can either install via YUM (if you have the [Extras Channel](https://access.redhat.com/solutions/912213)), or build the RPM yourself, or use Python's pip package manager. I will show you how to install via pip.
 
