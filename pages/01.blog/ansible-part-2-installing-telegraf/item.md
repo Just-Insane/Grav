@@ -57,7 +57,7 @@ This playbook is a bit more advanced then the last one we looked at, however, it
 
 Let's break it down below.
 
-! Note that I won't explain parts that are the same across this playbook and the previous, which can be found [here](https://blog.justin-tech.com/blog/ansible-part-1-linux-host-updates).
+! Note that I won't explain parts that are the same across this playbook and the previous, which can be found [here](https://homelab.blog/ansible-part-1-linux-host-updates).
 
 First, we can see that there are three tasks, and a handler defined. Handlers are a way to tell Ansible to do `<something>`, but only when a task actually changes or updates something. In this playbook, the handler tells Ansible to restart telegraf if the final task in the playbook makes a change, otherwise telegraf won't be restarted.
 
