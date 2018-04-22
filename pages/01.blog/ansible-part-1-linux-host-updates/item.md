@@ -25,7 +25,7 @@ Interested? Awesome! Let's look at installing Ansible and creating our first pla
 
 ## Step 1: Installation
 
-Note: I am assuming you are using CentOS 7, if you are using another OS, you can find Ansible's installation documentation ~~[here](http://docs.ansible.com/ansible/latest/intro_installation.html)~~.
+Note: I am assuming you are using CentOS 7, if you are using another OS, you can find Ansible's installation documentation [here](http://docs.ansible.com/ansible/latest/intro_installation.html).
 
 On your Ansible host (which can be a dedicated VM, or your laptop), you can either install via YUM (if you have the [Extras Channel](https://access.redhat.com/solutions/912213)), or build the RPM yourself, or use Python's pip package manager. I will show you how to install via pip.
 
@@ -41,7 +41,7 @@ and you are all set to get started with Ansible.
 
 Note: Ansible uses YAML for it's files, as such, white space is very important for syntax. Always uses spaces, not tabs, when working with Ansible.
 
-Note: I keep my Ansible playbooks in Git, the corresponding repo for this post can be found [here](https://git.justin-tech.com/ansible/yum_update).
+Note: I keep my Ansible playbooks in Git, the corresponding repo for this post can be found ~~[here](https://git.justin-tech.com/ansible/yum_update)~~.
 
 1. Add some hosts to your host file:
 
