@@ -14,7 +14,7 @@ In part two of this series, we will look at creating a playbook to deploy and co
 
 ===
 
-As always, a link to the completed playbook can be found [here](https://git.justin-tech.com/snippets/13).
+As always, a link to the completed playbook can be found ~~[here](https://git.justin-tech.com/snippets/13)~~.
 
 ```yaml
 ---
