@@ -132,7 +132,7 @@ Let's break that down a bit and look at what the script actually does.
 
 1. `chmod +x /root/rclone-cron.sh` - makes the script executable
 2. `cd /root/ && ./rclone-cron.sh` - runs the script.
-! rclone does not run in the background. It is recommended to run the script in tux or similar, or wait for the crontab to run, as the initial backup will probably take a long time if you have a lot of data like I do.
+! rclone does not run in the background. It is recommended to run the script in tmux or similar, or wait for the crontab to run, as the initial backup will probably take a long time if you have a lot of data like I do.
 
 ### Step 5a: Check B2 console to see if it's working.
 
