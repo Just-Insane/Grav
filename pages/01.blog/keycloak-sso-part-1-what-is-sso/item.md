@@ -24,7 +24,7 @@ What this means is that we can use a single authentication service to allow user
 
 This is different than connecting each of these applications to LDAP, as this requires providing a username and password to every service that you want to login to.
 
-## Benefits of SSO
+### Benefits of SSO
 
 1. Central location for authentication allows for easier auditing and security.
 
