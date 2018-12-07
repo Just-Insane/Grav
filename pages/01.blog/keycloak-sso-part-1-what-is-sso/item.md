@@ -46,9 +46,9 @@ More information about Keycloak can be found here: https://www.keycloak.org
 
 The basic workflow when authenticating to a service that uses SAML/OIDC from the users perspective is as follows:
 
-1: User goes to the web address of a SSO protected service (known as a service provider, or SP).
+1. User goes to the web address of a SSO protected service (known as a service provider, or SP).
 
-2: The service asks for a cookie that the users browser may have stored, which contains a token, if it finds a valid token in the browser, it logs the user in. If this token does not exist, or is invalid, the service directs the user to the configured Identity Provider (IDp).
+2. The service asks for a cookie that the users browser may have stored, which contains a token, if it finds a valid token in the browser, it logs the user in. If this token does not exist, or is invalid, the service directs the user to the configured Identity Provider (IDp).
 
 3. Once the user reaches the IDp, they are presented with a login page.
 
