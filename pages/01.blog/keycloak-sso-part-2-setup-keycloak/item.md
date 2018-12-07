@@ -43,8 +43,27 @@ The first step in setting up a database for Keycloak is to download a JDBC drive
 
 The official documentation is a good resource for how to package the driver for use with Keycloak, and there is no point in duplicating efforts. It can be found here: https://www.keycloak.org/docs/latest/server_installation/index.html#package-the-jdbc-driver
 
+This boils down to adding a folder structure, copying the .jar file, and adding an .xml file like the following:
+
+```
+<?xml version="1.0" ?>
+<module xmlns="urn:jboss:module:1.3" name="org.postgresql">
+
+    <resources>
+        <resource-root path="postgresql-9.4.1212.jar"/> <!-- update the filename to match your PostgreSQL JDBC driver file name -->
+    </resources>
+
+    <dependencies>
+        <module name="javax.api"/>
+        <module name="javax.transaction.api"/>
+    </dependencies>
+</module>
+```
+
+Making sure to update the path with the correct file name.
+
 #### Declare and load the driver
 
 This part, as well as modifying the datasource are a bit more advanced, so I will go over them in a bit more detail here, however the documentation is still very helpful.
 
-We are going to look at the standalone-ha.xml file we were working on earlier, specifically the `drivers` XML block. In this block, we will be adding an additional driver. We can mostly copy the existing format of the h2 driver.
+We are going to look at the standalone-ha.xml file we were working on earlier, specifically the `drivers` XML block. In this block, we will be adding an additional driver. We can mostly copy the existing format of the h2 driver, and update the information for PostgreSQL.
