@@ -233,4 +233,5 @@ WantedBy=multi-user.target
 Once you have completed this step, you can start and enable the service by running the below commands on all of your Keycloak servers:
 
 `systemctl enable keycloak`
+
 `systemctl start keycloak`
