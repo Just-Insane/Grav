@@ -30,3 +30,21 @@ Reading and understanding the official documentation is essential to installing 
 The first thing to think about when deploying Keycloak is what operation mode you want to use. This will mostly come down to your environment, and the configuration of most modes is the same, just within different files. I am most experienced with Standalone-HA mode, so that is what we are going to work with in this series.
 
 Configuration for this mode is done in the standalone-ha.xml configuration file found at `$keycloak_home/standalone/configuration/standalone-ha.xml`
+
+### Relational Database Setup
+
+The next thing we have to do is setup Keycloak to use a database, since we are going to be creating a deployment with multiple servers, we are going to need a shared database. Setting up a centrally accessible database is beyond the scope of this article. Just know that we are going to be using a PostgreSQL database that is hosted outside of both of the Keycloak servers.
+
+#### Download a JDBC driver
+
+The first step in setting up a database for Keycloak is to download a JDBC driver for the database. This allows Java to interact with the database. You can usually find these on the main site of your chosen database. For example, PostgreSQL's JDBC driver can be found here: https://jdbc.postgresql.org/download.html
+
+#### Package the driver JAR and install
+
+The official documentation is a good resource for how to package the driver for use with Keycloak, and there is no point in duplicating efforts. It can be found here: https://www.keycloak.org/docs/latest/server_installation/index.html#package-the-jdbc-driver
+
+#### Declare and load the driver
+
+This part, as well as modifying the datasource are a bit more advanced, so I will go over them in a bit more detail here, however the documentation is still very helpful.
+
+We are going to look at the standalone-ha.xml file we were working on earlier, specifically the `drivers` XML block. In this block, we will be adding an additional driver. We can mostly copy the existing format of the h2 driver.
