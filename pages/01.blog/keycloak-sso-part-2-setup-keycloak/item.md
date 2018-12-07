@@ -162,8 +162,7 @@ You will need to configure the `urn:jboss:domain:undertow:6.0` block to look lik
    <buffer-cache name="default"/>
    <server name="default-server">
       <ajp-listener name="ajp" socket-binding="ajp"/>
-      <http-listener name="default" socket-binding="http" redirect-socket="https"
-          proxy-address-forwarding="true"/>
+      <http-listener name="default" socket-binding="http" redirect-socket="https" proxy-address-forwarding="true"/>
       ...
    </server>
    ...
