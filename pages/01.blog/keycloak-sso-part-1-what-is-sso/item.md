@@ -41,3 +41,21 @@ Keycloak is an open source program that allows you to setup a secure single sign
 These features allows Keycloak to be highly configurable, but also fairly easy to install and setup.
 
 More information about Keycloak can be found here: https://www.keycloak.org
+
+### Basic Workflow
+
+The basic workflow when authenticating to a service that uses SAML/OIDC from the users perspective is as follows:
+
+1: User goes to the web address of a SSO protected service (known as a service provider, or SP).
+
+2: The service asks for a cookie that the users browser may have stored, which contains a token, if it finds a valid token in the browser, it logs the user in. If this token does not exist, or is invalid, the service directs the user to the configured Identity Provider (IDp).
+
+3. Once the user reaches the IDp, they are presented with a login page.
+
+4. The user logins in with their provided credentials. The IDp can compare these to locally stored credentials, or against an LDAP or Kerberos backend.
+
+5. The user is given a token upon successful login which is stored as a cookie in the browser, and gets automatically redirected back to the service they were initially attempting to access. This token usually contains a username, as well as information regarding what the user has access to, if using a protocol like OIDC that supports authorization.
+
+6. The service requests the token from the browser and if the token is valid, allows the user access to the service.
+
+Token validation is done on a secure back channel between the service and Identity Provider, without involving the browser, to increase security.
