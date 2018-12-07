@@ -1,13 +1,15 @@
 ---
 title: 'Keycloak SSO Part 1: What is single sign on?'
-date: '06-12-2018 21:48'
+published: true
+date: '06-12-2018 21:00'
+publish_date: '06-12-2018 21:00'
 taxonomy:
     category:
         - blog
     tag:
         - Keycloak
-hide_git_sync_repo_link: false
 visible: true
+hide_git_sync_repo_link: false
 ---
 
 In this series, we will take a look at Keycloak, an open-source single sign on solution similar to Microsoft's ADFS product.
