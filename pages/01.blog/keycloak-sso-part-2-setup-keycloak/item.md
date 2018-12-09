@@ -99,11 +99,11 @@ Below we will see an example of a working PostgreSQL datasource configuration.
 </datasource>
 ```
 
-$URL = The URL or IP Address of the PostgreSQL server
-$PORT = The port to connect to PostgreSQL database
-$DATABASE = The name of the database that is configured for Keycloak
-$USERNAME = The username that has access to the database specified above
-$PASSWORD = The password of the user defined above
+$URL = The URL or IP Address of the PostgreSQL server  
+$PORT = The port to connect to PostgreSQL database  
+$DATABASE = The name of the database that is configured for Keycloak  
+$USERNAME = The username that has access to the database specified above  
+$PASSWORD = The password of the user defined above  
 
 In the end, you should end up with a `datasources` section that looks like the following:
 
