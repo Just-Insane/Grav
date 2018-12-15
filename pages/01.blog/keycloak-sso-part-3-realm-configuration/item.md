@@ -1,13 +1,13 @@
 ---
 title: 'Keycloak SSO Part 3: Realm Configuration'
-published: false
+published: true
 date: '15-12-2018 18:30'
 taxonomy:
     category:
         - blog
     tag:
         - Keycloak
-visible: true
+visible: false
 hide_git_sync_repo_link: false
 ---
 
