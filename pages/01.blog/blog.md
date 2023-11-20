@@ -19,7 +19,7 @@ sitemap:
     changefreq: monthly
 blog_url: blog
 feed:
-    description: 'Justin-Tech Blog'
+    description: 'Homelab Blog'
     limit: 10
 pagination: true
 ---
